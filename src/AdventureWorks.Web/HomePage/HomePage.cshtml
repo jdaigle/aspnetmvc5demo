@@ -1,0 +1,9 @@
+﻿@model AdventureWorks.Web.HomePage.HomePageViewModel
+
+<h1>Hello World</h1>
+
+<h3>Links</h3>
+@foreach (var link in Model.Links)
+{
+    <a href="@link.URL">@link.Name</a>
+}
